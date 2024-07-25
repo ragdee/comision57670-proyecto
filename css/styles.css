@@ -869,8 +869,21 @@ input[type="submit"] {
     .estiloprueba{
         flex-direction: column;
     }
-}
-    /* Texto de ejemplo para saber que estoy en una rama */
-
-
     
+
+    .bgqs {
+        padding: 20px;
+        
+
+    }
+    .bannerImg3 {
+        width: 80%;
+        padding-top: 60px;     
+    }
+    .bannerImg4{
+        width: 90%;
+        padding-bottom: 60px;      
+    }
+
+}
+   
