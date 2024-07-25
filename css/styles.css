@@ -91,30 +91,41 @@ nav ul li.here a {    /* enlemento menu donde estoy */
     
 }
 
-.banner2{
+/* .banner2{
     background-color: #ffffff;
     width: 100%;
     height: 25rem;
     display: flex;
     align-items: center;
     justify-content:space-between;
-    background-image: url(../assets/banner2fondo.png);
+    background-image: url(../assets/banner2background.png);
     background-size:auto;
     background-repeat: no-repeat;
-    background-position: top -100px left -300px;    
+    background-position: top -500px left -300px;    
     margin: 1.5rem 0rem;
+    position: relative;
+    overflow: hidden;
+} */
+
+.banner2{
+    background-color: #ffffff;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    background-image: url(../assets/banner2background1.jpg);
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    margin: 1.5rem 0rem;
+    padding-right: 1rem;
     position: relative;
     overflow: hidden;
 }
 
-.banner2 img {
-    position: absolute;
-    z-index: 1;
-    top: 10px; /* Ajusta según sea necesario */
-    left: 0px; /* Ajusta según sea necesario */
-}
 .banner2 article{
-    z-index: 2; /* Este elemento estará delante */
+    width: 40%; 
 
 }
 
@@ -191,6 +202,7 @@ nav ul li.here a {    /* enlemento menu donde estoy */
     border:none;
     border-radius:3rem;
     cursor: pointer;
+    margin-top: 1.5rem;
     
 }
 
@@ -745,8 +757,36 @@ input[type="submit"] {
         object-fit: contain;
     }
     
+    .banner2{
+        background-position: top -150px left -20px; 
+        background-size:auto;
+        justify-content:center;
+
+    }
+    
+
+    .banner2 article{
+        width: 60%; 
+        text-align: right; 
+    
+    }
+
+    
+.contentFooter{
+   
+    flex-direction: column;
+    
 }
-@media (max-width: 450px){
+.contentFooter section{
+    width: 100%;
+}
+
+.contentContactcolumn2right{
+    text-align:left;
+}
+
+}
+@media (max-width: 455px){
     
 
     .banner {
@@ -765,7 +805,25 @@ input[type="submit"] {
         object-fit: contain;
     }
     
+    .banner2{
+        justify-content:center;
+        background-position: top -150px left -20px; 
+        background-size:auto;
+        height: 28rem;
+
+    }
+    
+    .banner2 article{
+        width: 80%;  
+        text-align: center;   
+        padding-bottom: 20px;
+    }
+    
+    .estiloprueba{
+        flex-direction: column;
+    }
 }
     /* Texto de ejemplo para saber que estoy en una rama */
 
 
+    
