@@ -60,80 +60,129 @@
         </section>
         <section class="whiteSection">
             <h1 class="grisTitle">TIENDA</h1>
-            <div class="Tienda">
-                <div class="filtro">
-                    <h3 class="lighter">Filtrar por</h3>                    
-                    <div>
-                        <a class="h4" href="#">Categoría</a>
-                        <a class="h4" href="#">-</a>
-                    </div>
-                    <div>
-                        <a class="h4" href="#">Todos</a>
-                        <a class="h4" href="#">-</a>
-                    </div>
-                    
-                    <a class="h4" href="#">2000 PUFFS <br></a>
-                    <a class="h4" href="#">5000 PUFFS <br></a>
-                    <a class="h4" href="#">7500 PUFFS <br></a>
-                    <a class="h4" href="#">8000 PUFFS <br></a>
+            <div class="Tienda"> 
+                <div class="bloquefiltro">
+                    <h3 class="lighter">Filtrar por</h3>
+<!-- falta nestear correctamente -->
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                              <h4 class="h4400">Categoría</h4>
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a class="h4 clickeable" href="#">Todos</a></li>
+                                    <li><a class="h4 clickeable" href="#">2000 Puffs</a></li>
+                                    <li><a class="h4 clickeable" href="#">5000 Puffs</a></li>
+                                    <li><a class="h4 clickeable" href="#">7500 Puffs</a></li>
+                                    <li><a class="h4 clickeable" href="#">8000 Puffs</a></li>
+                                </ul> 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                <h4 class="h4400">Precio</h4>
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                
+                                <!-- rangos -->
+                                <label for="customRange2" class="form-label"><p>Desde</p></label>
+                                <input type="range" class="form-range" min="0" max="10" id="customRange2">
+                                <div class="divflex">
+                                    <p>4990</p>
+                                    <p>19990</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                <h4 class="h4400">Sabor</h4>
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a class="h4 clickeable" href="#">Banana Ice</a></li>
+                                    <li><a class="h4 clickeable" href="#">Double Apple</a></li>
+                                    <li><a class="h4 clickeable" href="#">Bubblegum Ice</a></li>
+                                    <li><a class="h4 clickeable" href="#">Lemon Tart</a></li>
+                                    <li><a class="h4 clickeable" href="#">Wartermelon</a></li>
+                                </ul>                                
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                 </div>
-                <div class="productosTienda">
+                
+
+
+                <div class="productos">
                     <div>
-                        <img src="../assets/P3.png" alt="producto3">
+                        <img src="../assets/producto1f.jpg" alt="producto3">
                         <h4>Fuyl POD Kit - Lemon Tart</h4>
                         <h3>$7.990</h3>
                         <button class="botonComprar">Comprar</button>
                     </div>
                     <div>
-                        <img src="../assets/P2.png" alt="producto2">
+                        <img src="../assets/producto1g.jpg" alt="producto2">
                         <h4>Fuyl Vape - Blueberry Ice 8000 Puff</h4>
                         <h3>$19.900</h3>
                         <button class="botonComprar">Comprar</button>
                     </div>
                     <div>
-                        <img src="../assets/P5.png" alt="producto5">
+                        <img src="../assets/producto1h.jpg" alt="producto5">
                         <h4>Fuyl POD replace - Banana Ice</h4>
                         <h3>$5.990</h3>
                         <button class="botonComprar">Comprar</button>
                     </div>
                     <div>
-                        <img src="../assets/P4.png" alt="producto4">
+                        <img src="../assets/producto1i.jpg" alt="producto4">
                         <h4>Vape Pen Plus - Double Apple 2000 Puff</h4>
                         <h3>$8.990</h3>
                         <button class="botonComprar">Comprar</button>
                     </div>
                     <div>
-                        <img src="../assets/P1.png" alt="producto1">
+                        <img src="../assets/producto1j.jpg" alt="producto1">
                         <h4>Fuyl Vape - Bubblegum Ice 8000 Puff</h4>
                         <h3>$19.900</h3>
                         <button class="botonComprar">Comprar</button>
                     </div>
                     <div>
-                        <img src="../assets/P3.png" alt="producto3">
+                        <img src="../assets/producto1a.jpg" alt="producto3">
                         <h4>Fuyl POD Kit - Lemon Tart</h4>
                         <h3>$7.990</h3>
                         <button class="botonComprar">Comprar</button>
                     </div>
                     <div>
-                        <img src="../assets/P2.png" alt="producto2">
+                        <img src="../assets/producto1b.jpg" alt="producto2">
                         <h4>Fuyl Vape - Blueberry Ice 8000 Puff</h4>
                         <h3>$19.900</h3>
                         <button class="botonComprar">Comprar</button>
                     </div>
                     <div>
-                        <img src="../assets/P5.png" alt="producto5">
+                        <img src="../assets/producto1c.jpg" alt="producto5">
                         <h4>Fuyl POD replace - Banana Ice</h4>
                         <h3>$5.990</h3>
                         <button class="botonComprar">Comprar</button>
                     </div>
                     <div>
-                        <img src="../assets/P4.png" alt="producto4">
+                        <img src="../assets/producto1d.jpg" alt="producto4">
                         <h4>Vape Pen Plus - Double Apple 2000 Puff</h4>
                         <h3>$8.990</h3>
                         <button class="botonComprar">Comprar</button>
                     </div>
                     <div>
-                        <img src="../assets/P1.png" alt="producto1">
+                        <img src="../assets/producto1e.jpg" alt="producto1">
                         <h4>Fuyl Vape - Bubblegum Ice 8000 Puff</h4>
                         <h3>$19.900</h3>
                         <button class="botonComprar">Comprar</button>
@@ -142,7 +191,24 @@
                 </div>
                 
             </div>
-            <button class="botonCargarMas">Cargar Más</button>
+            <!-- boton paginacion -->
+
+            <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link">Anterior</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Próxima</a>
+                  </li>
+                </ul>
+              </nav>
+
         </section>    
     </main>
     <footer>

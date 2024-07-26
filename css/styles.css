@@ -25,7 +25,20 @@ header{
     gap: 1rem;
     align-items: center;
 }
+.flexboxCol{
+    width: 13rem;
+    text-align: justify;
+    flex-direction: column;
+}
 
+.divflex{
+    display: flex;
+    justify-content:space-between;
+}
+
+li{
+    list-style: none;
+}
 .navBar {
     
     display: flex;
@@ -56,6 +69,8 @@ ul {
     font-weight:500; 
     padding-left: 1rem;
 }
+
+
 
 .nav-link:hover {
     color: #86CFEF;
@@ -206,25 +221,25 @@ ul {
 
 
 .botonComprar {
-    color:#2382AB;
+    color:#4FA5EB;
     background-color:#ffffff;
     font-family: "Barlow";
     font-size: 1.5rem;
     padding: 0.8rem 1.5rem;
-    border: 3px solid #2382AB;
+    border: 2px solid #4FA5EB;
     border-radius: 3rem;
     cursor: pointer;
 }
 
 .botonComprar:hover {
-    color:#4FA5EB;
-    border:3px solid #4FA5EB;
+    color:#007FE5;
+    border:2px solid #007FE5;
     border-radius: 3rem;
 }
 .botonComprar:active {
     color:#ffffff;
-    background-color:#4FA5EB;
-    border:3px solid #4FA5EB;
+    background-color:#007FE5;
+    border:2px solid #007FE5;
     border-radius: 3rem;
 }
 
@@ -281,15 +296,27 @@ h3{
 
 h4{
     color:#949494;
+    font-size: 1.2rem;
     font-family: "Barlow";
     font-weight: 300;
 }
 
 .h4{
     color:#949494;
+    font-size: 1.2rem;
     font-family: "Barlow";
     font-weight: 300;
     text-decoration: none
+}
+
+.h4400{
+    color:#949494;
+    font-family: "Barlow";
+    font-weight: 500;
+    text-decoration: none
+}
+.clickeable:hover{
+    font-weight: 400;
 }
 
 h5{
@@ -429,9 +456,13 @@ input[type="submit"] {
     height: 400px;
 }
 
+.productos h4{
+    
+    min-height: 3rem ;
+}
 
 .productos h1,
-.productos h4,
+
 .productos h3,
 .productos p,
 .productos button {
@@ -712,12 +743,17 @@ input[type="submit"] {
     order: 2;
 }
 
-.Tienda{
+.Tienda{    
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
 }
+.bloquefiltro{
+    width:250px;
+    text-align: justify;
+}
+/* 
 .filtro{
     width: 150px;
     display: flex;
@@ -734,33 +770,9 @@ input[type="submit"] {
     text-underline-offset: 8px;
     margin-bottom: 16px;
 
-}
+} */
 
-.productosTienda{
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:center;
-    width: 85%;
-}
-.productosTienda img{
-    width: 200px;
-    height:200px;
-    object-fit: contain;
-}
-
-.productosTienda div{
-    width: 250px;
-    height: 400px;
-}
-.productosTienda h1,
-.productosTienda h4,
-.productosTienda h3,
-.productosTienda p,
-.productosTienda button {
-    margin-bottom: 1rem;
-}
 
 /* pagina Terminos y Condiciones */
 
@@ -780,6 +792,35 @@ input[type="submit"] {
 }
 .BloqueTerminos ul li{
     padding-left: 16px;
+}
+
+
+
+/* personalizacion acordeon */
+
+.accordion{
+    --bs-accordion-btn-bg:#ffffff;
+    --bs-accordion-btn-color:#ffffff;
+    --bs-accordion-active-bg:#ffffff;
+    --bs-accordion-active-color:#ffffff;
+    --bs-accordion-btn-focus-box-shadow:none;
+}
+.accordion-body{
+    text-align: justify;    
+}
+
+/* personalizacion paginador */
+.pagination{
+    /* --bs-pagination-active-bg:#4FA5EB; */
+    --bs-pagination-active-border-color:none;
+    --bs-pagination-color:#4FA5EB;
+    --bs-pagination-hover-color:#007FE5;
+    --bs-pagination-border-radius:30px;
+    --bs-pagination-font-size:1.2rem;
+    --bs-pagination-padding-x:1rem;
+    --bs-pagination-padding-y:0.5rem;
+    --bs-pagination-focus-box-shadow:none;
+    --bs-pagination-focus-bg:#E9ECEF;
 }
 
 
@@ -915,6 +956,20 @@ input[type="submit"] {
         text-align:left;
     }
 
+    .Tienda{    
+        
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .bloquefiltro{
+        width:80%;
+        justify-items:center;
+        text-align: justify;
+    }
+
+
+
 }
 
 
@@ -1009,3 +1064,4 @@ input[type="submit"] {
         padding-top: 50px;        
     }
 }
+
