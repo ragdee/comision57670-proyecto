@@ -188,10 +188,12 @@ ul {
     border:3px solid #8B8CD6;
     border-radius:3rem;
     cursor: pointer;
+    transition: transform 0.3s ease; /* Transición suave */
 }
 .botonVioleta:hover {
     background-color:#5254C3;
     border:3px solid #5254C3;
+    transform: scale(1.01); 
 }
 .botonVioleta:active{
     color:#5254C3;
@@ -237,11 +239,13 @@ ul {
     border-radius:3rem;
     cursor: pointer;
     margin-top: 1.5rem;
+    transition: transform 0.3s ease; /* Transición suave */
 }
 
 .botonCargarMas:hover{
     background-color:#007FE5;
     border:3px solid #007FE5;
+    transform: scale(1.01);
 }
 .botonCargarMas:active{
     color:#007FE5;
@@ -249,6 +253,7 @@ ul {
     border:3px solid #007FE5;
 
 }
+
 
 
 h1{
@@ -412,6 +417,10 @@ input[type="submit"] {
     width: 200px;
     height: 200px;
     object-fit: contain;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+.productos img:hover {
+    transform: scale(1.05);
 }
 
 .productos div{
