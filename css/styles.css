@@ -407,11 +407,12 @@ input[type="submit"] {
 
 
 .productos{
+    padding: 0px 0px 0px 100px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: justify;
-    width: 80%;
+    
+    width: 100%;
 }
 .productos img{
     width: 200px;
@@ -828,7 +829,10 @@ input[type="submit"] {
         width: 80%;
     }
 
+    .productos{
+        padding: 0px 0px 0px 100px;
 
+    }
     .GridContacto{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -939,4 +943,8 @@ input[type="submit"] {
         padding-bottom: 60px;
     }
 
+    .productos{
+        padding: 0px 0px 0px 40px;
+
+    }
 }
