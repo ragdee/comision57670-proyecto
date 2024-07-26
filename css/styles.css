@@ -161,7 +161,7 @@ ul {
 }
 
 .green{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #CDCB13;
 }
 
@@ -649,20 +649,28 @@ input[type="submit"] {
     padding: 24px;
     text-align: center;
 }
+
+.GridContactExperiencia1 img{
+    width: 2rem; 
+    margin: 1rem;   
+}
+
+
 .GridContactExperiencia2{
     grid-row: 1/2 ;
     grid-column:2/3;
-    background-image: url("../assets/housevape.jpg");
+    background-image: url("../assets/housevape2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: contain;
-
 }
+
+
 .GridContactWorld{
     grid-row: 2/3 ;
     grid-column:1/2;
-    background-image: url("../assets/world.jpg");
+    background-image: url("../assets/world22.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1031,6 +1039,12 @@ input[type="submit"] {
     .productos{
         padding: 0px 0px 0px 40px;
 
+    }
+
+
+    .ContactBlueSection article{
+        width: 100%;
+        padding: 0px 24px;
     }
 
     /* .BannerTienda{
