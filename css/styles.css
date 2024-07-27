@@ -18,11 +18,7 @@
 .estiloprueba{
     margin-top: 1rem;
 }
-section div img{
-    width: 300px;
-    height: 300px ;
-    object-fit: cover;    
-}
+
 
 header{
     margin-top: 85px;
