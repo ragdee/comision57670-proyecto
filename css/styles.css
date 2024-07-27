@@ -76,6 +76,13 @@ ul {
 }
 
 
+.ul2 {
+    list-style:disc;
+    
+
+}
+
+
 
 .nav-link:hover {
     color: #86CFEF;
