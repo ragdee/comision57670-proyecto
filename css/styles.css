@@ -15,6 +15,15 @@
     top: 0;
     z-index: 99;
 }
+.estiloprueba{
+    margin-top: 1rem;
+}
+section div img{
+    width: 300px;
+    height: 300px ;
+    object-fit: cover;    
+}
+
 header{
     margin-top: 80px;
     padding: 1.5rem;
@@ -48,7 +57,6 @@ li{
 .navBar {
 
     display: flex;
-    
     gap: 1rem;
     font-family: "Barlow";
     list-style: none;  /* Oculta Viñeta del menu */
