@@ -455,6 +455,27 @@ textarea:focus {
     max-height: 45px;
 }
 
+.iconmenu{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+}
+.iconmenu li a{
+    padding-right: 0.5rem;
+}
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dropdown-menu {
+    opacity: 0; /* Inicialmente, el menú está oculto */
+    transition: opacity 0.5s ease; /* Transición suave */
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1; /* Al pasar el mouse, muestra el menú */
+}
 
 
 .productos{
@@ -1143,6 +1164,17 @@ textarea:focus {
 {
     width: 80px;
     height: 60px;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+.iconmenu{
+    justify-content: center;
+    width: 100%;
+}
+.dropdown{
+    flex-direction: column;
 }
 
 }
