@@ -78,7 +78,7 @@ ul {
 
 .ul2 {
     list-style:disc;
-    
+     
 
 }
 
@@ -819,11 +819,11 @@ textarea:focus {
 /* pagina Terminos y Condiciones */
 
 .BloqueTerminos{
-    width: 85%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding: 24px 0px;
+    
 }
 .BloqueTerminos p,
 .BloqueTerminos h4,
