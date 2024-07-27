@@ -990,7 +990,9 @@ input[type="submit"] {
 
 
 @media (max-width: 455px){
-
+    header{
+        margin-top: 114px;
+    }
 
     .banner {
         height: auto;
