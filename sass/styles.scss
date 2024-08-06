@@ -1,0 +1,15 @@
+// 2 Base
+@import "./base/reset";
+@import "./base/typografias";
+
+//3 components
+@import "./components/_buttons.scss";
+@import "./components/_navbar.scss";
+
+//4 Layout
+@import "./layout/_banner.scss";
+@import "./layout/_footer.scss";
+@import "./layout/_main.scss";
+@import "./layout/media/_media950.scss";
+@import "./layout/media/_media790.scss";
+@import "./layout/media/_media455.scss";

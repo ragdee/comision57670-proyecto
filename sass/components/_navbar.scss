@@ -1,0 +1,100 @@
+.bg-body-tertiary {
+    background-color: #ffffff !important;
+}
+.sticky{
+    background-color: #ffffff;
+    width:100%;
+    position:fixed;
+    top: 0;
+    z-index: 99;
+}
+.estiloprueba{
+    margin-top: 1rem;
+}
+
+
+header{
+    margin-top: 85px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+
+ul {
+    font-family: "Barlow";
+    color: #949494;
+    font-weight:500;
+    padding-left: 1rem;
+}
+
+li{
+    list-style: none;
+}
+.navBar {
+
+    display: flex;
+    gap: 1rem;
+    font-family: "Barlow";
+    list-style: none;  /* Oculta Viñeta del menu */
+    margin: 1rem;
+}
+
+.container-fluid{
+    flex-direction: row !important;
+}
+
+.eleMenu {
+    gap: 1rem;
+    font-family: "Barlow";
+    list-style: none;  /* Oculta Viñeta del menu */
+    margin: 1rem;
+}
+
+.nav-link:hover {
+    color: #86CFEF;
+    font-weight:500;
+}
+
+.heree{
+    color: #2382AB !important;
+    font-weight: 500;
+
+}
+
+.svg{
+    width:24px;
+    height:24px;
+    fill: #2382AB;
+    transition: fill 0.3s;
+}
+.svg:hover {
+    fill: #86CFEF;
+}
+
+.icon{
+    max-height: 45px;
+}
+
+.iconmenu{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+}
+.iconmenu li a{
+    padding-right: 0.5rem;
+}
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dropdown-menu {
+    opacity: 0; /* Inicialmente, el menú está oculto */
+    transition: opacity 0.5s ease; /* Transición suave */
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1; /* Al pasar el mouse, muestra el menú */
+}
