@@ -22,13 +22,10 @@
         background-position: top -150px left -20px;
         background-size:auto;
         justify-content:center;
-
-    }
-
-
-    .banner2 article{
-        width: 60%;
-        text-align: right;
+        article {
+            width: 60%;
+            text-align: right;            
+        }
 
     }
 
@@ -42,7 +39,7 @@
     .bannerImg4{
         width: 80%;
     }
-
+    
     .productos{
         padding: 0px 0px 0px 100px;
 
@@ -117,14 +114,13 @@
         padding-top: 50px;
     }
 
-
-    .contentFooter{
-
-        flex-direction: column;
-
-    }
-    .contentFooter section{
-        width: 100%;
+    footer{
+        div{
+            flex-direction: column;
+            section{
+                width: 100%;
+            }
+        }
     }
 
     .contentContactcolumn2right{

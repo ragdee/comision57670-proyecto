@@ -23,13 +23,14 @@
         background-position: top -150px left -20px;
         background-size:auto;
         height: 28rem;
-
-    }
-
-    .banner2 article{
-        width: 80%;
-        text-align: center;
-        padding-bottom: 20px;
+        article {
+            width: 80%;
+            text-align: center;
+            padding-bottom: 20px;
+            p{
+                font-size: 25px;
+            }
+        }
     }
 
     .estiloprueba{

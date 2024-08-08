@@ -7,61 +7,41 @@
     justify-content: center;
     align-items: center;
     Margin: 48px 24px 24px 24px;
+    h2{
+        font-size: 2.8125rem;
+        color: #949494;
+    }
+
 }
-
-
 
 .productos{
     padding: 0px 0px 0px 100px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
     width: 100%;
+    div{    
+        width: 250px;
+        height: 400px;
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            transition: transform 0.3s ease; /* Transición suave */
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+        h4{
+            min-height: 3rem ;}
+        h1,
+        h3,
+        p,
+        button {
+            margin-bottom: 1rem;            
+        }
+    }
 }
-.productos img{
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    transition: transform 0.3s ease; /* Transición suave */
-}
-.productos img:hover {
-    transform: scale(1.05);
-}
-
-.productos div{
-    width: 250px;
-    height: 400px;
-}
-
-.productos h4{
-
-    min-height: 3rem ;
-}
-
-.productos h1,
-
-.productos h3,
-.productos p,
-.productos button {
-    margin-bottom: 1rem;
-
-}
-
-
-/* personalizacion paginador */
-.pagination{    
-    --bs-pagination-active-border-color:none;
-    --bs-pagination-color:#4FA5EB;
-    --bs-pagination-hover-color:#007FE5;
-    --bs-pagination-border-radius:30px;
-    --bs-pagination-font-size:1rem;
-    --bs-pagination-padding-x:1rem;
-    --bs-pagination-padding-y:0.5rem;
-    --bs-pagination-focus-box-shadow:none;
-    --bs-pagination-focus-bg:#E9ECEF;
-}
-
 
 .greenSection{
     background-color: #FAFAE7;
@@ -189,7 +169,7 @@ input {
 }
 
 input:focus {
-    background-color: #ffffff; /* Color de fondo por defecto */
+    background-color: #ffffff /* Color de fondo por defecto */
 
 }
 

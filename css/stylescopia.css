@@ -28,9 +28,12 @@ header{
     padding: 0px;
 } */
 
+/* 
 .bg-body-tertiary {
     background-color: #ffffff !important;
-}
+} */
+
+
 .flexbox{
     display: flex;
     gap: 1rem;

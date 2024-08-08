@@ -293,6 +293,19 @@ li {
   opacity: 1; /* Al pasar el mouse, muestra el menú */
 }
 
+/* personalizacion paginador */
+.pagination {
+  --bs-pagination-active-border-color:none;
+  --bs-pagination-color:#4FA5EB;
+  --bs-pagination-hover-color:#007FE5;
+  --bs-pagination-border-radius:30px;
+  --bs-pagination-font-size:1rem;
+  --bs-pagination-padding-x:1rem;
+  --bs-pagination-padding-y:0.5rem;
+  --bs-pagination-focus-box-shadow:none;
+  --bs-pagination-focus-bg:#E9ECEF;
+}
+
 .banner {
   width: 100%;
   height: 25rem;
@@ -328,20 +341,16 @@ li {
   background-repeat: no-repeat;
   margin: 1.5rem 0rem;
   padding-right: 1rem;
-  /* position: relative; */
   overflow: hidden;
 }
-
 .banner2 article {
   width: 40%;
 }
-
-.rosavioleta {
+.banner2 article h1 {
   font-size: 2.8125rem;
   color: #8B8CD6;
 }
-
-.parrafobanner2 {
+.banner2 article p {
   font-size: 30px;
 }
 
@@ -408,14 +417,12 @@ footer {
   background-color: #E7E7E7;
   padding: 24px 24px;
 }
-
-.contentFooter {
+footer div {
   display: flex;
   text-align: center;
   margin-bottom: 24px;
 }
-
-.contentFooter section {
+footer div section {
   width: 50%;
 }
 
@@ -436,6 +443,10 @@ footer {
   align-items: center;
   Margin: 48px 24px 24px 24px;
 }
+.whiteSection h2 {
+  font-size: 2.8125rem;
+  color: #949494;
+}
 
 .productos {
   padding: 0px 0px 0px 100px;
@@ -444,45 +455,27 @@ footer {
   align-items: center;
   width: 100%;
 }
-
-.productos img {
+.productos div {
+  width: 250px;
+  height: 400px;
+}
+.productos div img {
   width: 200px;
   height: 200px;
   object-fit: contain;
   transition: transform 0.3s ease; /* Transición suave */
 }
-
-.productos img:hover {
+.productos div img:hover {
   transform: scale(1.05);
 }
-
-.productos div {
-  width: 250px;
-  height: 400px;
-}
-
-.productos h4 {
+.productos div h4 {
   min-height: 3rem;
 }
-
-.productos h1,
-.productos h3,
-.productos p,
-.productos button {
+.productos div h1,
+.productos div h3,
+.productos div p,
+.productos div button {
   margin-bottom: 1rem;
-}
-
-/* personalizacion paginador */
-.pagination {
-  --bs-pagination-active-border-color:none;
-  --bs-pagination-color:#4FA5EB;
-  --bs-pagination-hover-color:#007FE5;
-  --bs-pagination-border-radius:30px;
-  --bs-pagination-font-size:1rem;
-  --bs-pagination-padding-x:1rem;
-  --bs-pagination-padding-y:0.5rem;
-  --bs-pagination-focus-box-shadow:none;
-  --bs-pagination-focus-bg:#E9ECEF;
 }
 
 .greenSection {
@@ -611,7 +604,7 @@ input {
 }
 
 input:focus {
-  background-color: #ffffff; /* Color de fondo por defecto */
+  background-color: #ffffff;
 }
 
 textarea {
@@ -890,10 +883,10 @@ textarea:focus {
     object-position: -30px;
     padding-top: 50px;
   }
-  .contentFooter {
+  footer div {
     flex-direction: column;
   }
-  .contentFooter section {
+  footer div section {
     width: 100%;
   }
   .contentContactcolumn2right {
@@ -944,6 +937,9 @@ textarea:focus {
     width: 80%;
     text-align: center;
     padding-bottom: 20px;
+  }
+  .banner2 article p {
+    font-size: 25px;
   }
   .estiloprueba {
     flex-direction: column;

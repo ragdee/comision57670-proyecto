@@ -5,17 +5,26 @@ footer{
     align-items: center;
     background-color: #E7E7E7;
     padding: 24px 24px;
-
+    div{
+        display: flex;
+        text-align: center;
+        margin-bottom: 24px;
+        section{
+            width: 50%;
+        }
+    }
 }
 
-.contentFooter{
-    display: flex;
-    text-align: center;
-    margin-bottom: 24px;
-}
-.contentFooter section{
-    width: 50%;
-}
+// .contentFooter{
+//     display: flex;
+//     text-align: center;
+//     margin-bottom: 24px;
+// }
+// .contentFooter section{
+//     width: 50%;
+// }
+
+
 .contentContactcolumn1justify{
     text-align:justify;
 
