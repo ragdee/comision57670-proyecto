@@ -41,11 +41,11 @@ header{
     text-align: justify;
     flex-direction: column;
 }
-
+/* 
 .divflex{
     display: flex;
     justify-content:space-between;
-}
+} */
 /*
 li{
     list-style: none;
@@ -86,12 +86,6 @@ ul {
     padding-left: 1rem;
 } */
 
-
-.ul2 {
-    list-style:disc;
-
-
-}
 
 
 /*
@@ -239,7 +233,7 @@ ul {
     transition: transform 0.3s ease;  
 }
 */
-.botonVioleta:hover {
+/* .botonVioleta:hover {
     background-color:#5254C3;
     border:3px solid #5254C3;
     transform: scale(1.01);
@@ -302,7 +296,7 @@ ul {
     background-color:#ffffff;
     border:3px solid #007FE5;
 
-} */
+} */ */
 
 /*
 
@@ -393,18 +387,18 @@ footer{
 
 } */
 
-
+/* 
 input {
-    background-color: #d9d9d9; /* Color de fondo por defecto */
+    background-color: #d9d9d9; 
     border: none;
     outline: none;
     font-family: "Barlow";
     padding: 10px;
-    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    transition: background-color 0.3s ease; 
 }
 
 input:focus {
-    background-color: #ffffff; /* Color de fondo por defecto */
+    background-color: #ffffff; 
 
 }
 
@@ -415,7 +409,7 @@ textarea {
     border: none transparent;
     outline: none;
     font-family:"Barlow";
-    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    transition: background-color 0.3s ease; 
 }
 
 textarea:focus {
@@ -442,7 +436,7 @@ textarea:focus {
     border-radius: 0rem 1.875rem 1.875rem 0rem;
     padding: 0px 30px 0px 20px;
 
-}
+} */
 
 .ofertas{
     display: flex;
@@ -551,6 +545,11 @@ textarea:focus {
     text-align:right;
 } */
 
+
+
+
+/* 
+
 .blueSection{
     text-align: center;
     background-color: #85BECC;
@@ -566,13 +565,17 @@ textarea:focus {
 .blueSection h2,
 .blueSection p {
     color: #ffffff;
-}
+} */
 
 /* .greenSection{
     background-color: #FAFAE7;
     padding: 80px 24px;
     margin: 24px 0px;
 } */
+
+
+
+
 
 
 /*
@@ -593,7 +596,7 @@ textarea:focus {
     padding: 80px 24px;
     margin: 24px 0px;
 }
-
+/* 
 .bloquecontacto{
     width: 1fr;
     display: flex;
@@ -697,7 +700,7 @@ textarea:focus {
     font-weight: 300;
     color: #000000;
 }
-
+ */
 
 /* 
 .GridContacto{
@@ -840,7 +843,7 @@ textarea:focus {
 
 
 /* pagina Terminos y Condiciones */
-
+/* 
 .BloqueTerminos{
     width:95%;
     display: flex;
@@ -856,7 +859,7 @@ textarea:focus {
 }
 .BloqueTerminos ul li{
     padding-left: 16px;
-}
+} */
 
 
 
