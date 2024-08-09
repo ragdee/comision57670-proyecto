@@ -1,15 +1,15 @@
 
 .whiteSection{
-    background-color: #ffffff;
+    background-color: $colorBlanco;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
     Margin: 48px 24px 24px 24px;
-    h2{
+    h1, h2{
         font-size: 2.8125rem;
-        color: #949494;
+        color: map-get($colortexto,color3);
     }
 
 }
@@ -44,9 +44,12 @@
 }
 
 .greenSection{
-    background-color: #FAFAE7;
+    background-color: $colorcomp1;
     padding: 80px 24px;
     margin: 24px 0px;
+    h2 {
+        color:map-get($colortexto,color7)
+    }
 }
 
 .GridContacto{
@@ -66,9 +69,12 @@
     flex-direction: row;
     align-items: center;
     justify-content:space-between;
-    background-color: #A92C88;
+    background-color: $colorcomp2;
     padding: 24px;
     text-align: center;
+    h2{
+        color:map-get($colortexto,color1)
+    }
 }
 
 .GridContactExperiencia1 img{
@@ -87,7 +93,6 @@
     object-fit: contain;
 }
 
-
 .GridContactWorld{
     grid-row: 2/3 ;
     grid-column:1/2;
@@ -101,30 +106,40 @@
     justify-content: center;
     align-items: center;
     padding:24px;
+    h2{
+        color:map-get($colortexto,color1)
+    }
 }
 .GridContactFormada{
     grid-row: 2/3 ;
     grid-column:2/3;
-    background-color: #C7c7c7;
+    background-color: $colorcomp4;
     padding:24px;
     text-align: justify;
+    h2{
+        color:map-get($colortexto,color6);
+        text-align: center;
+    }
+    p{
+        color:map-get($colortexto,color6);
+        font-weight: 400;    
+    }
 }
 
 .ContactBlueSection{
     text-align: center;
-    background-color: #85BECC;
+    background-color: $colorcomp6;
     padding: 24px;
     display: flex;
     width: 100%;
     margin: 24px;
-}
-.ContactBlueSection article{
-    width: 25%;
-    padding: 0px 24px;
-}
-.ContactBlueSection h2,
-.ContactBlueSection p{
-    color: #ffffff;
+    article{
+        width: 25%;
+        padding: 0px 24px;
+    }
+        h2,p{
+            color: map-get($colortexto,color1);
+        }
 }
 
 .Tienda{
@@ -160,52 +175,44 @@
 /* pagina contacto */
 
 input {
-    background-color: #d9d9d9; /* Color de fondo por defecto */
+    background-color: $colorcomp5; /* Color de fondo por defecto */
     border: none;
     outline: none;
     font-family: "Barlow";
     padding: 10px;
     transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    &:focus{
+        background-color: $colorBlanco /* Color de fondo por defecto */
+    }
 }
-
-input:focus {
-    background-color: #ffffff /* Color de fondo por defecto */
-
-}
-
-
 
 textarea {
-    background-color: #d9d9d9;
+    background-color: $colorcomp5;
     border: none transparent;
     outline: none;
     font-family:"Barlow";
     transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
-}
-
-textarea:focus {
-    background-color: #ffffff;
+    &:focus{
+        background-color: $colorBlanco;
     border: none transparent;
     outline: none;
+    }
 }
 
-
 .inputWhite {
-
-    background-color: #ffffff;
+    background-color: $colorBlanco;
     border: none;
     border-radius: 1.875rem 0rem 0rem 1.875rem;
     padding: 10px 10px;
 }
 
-.submitSuscripcion[type="submit"] {
-    background-color: #4FA5EB;
-    color: #ffffff;
+.submitSuscripcion[type="submit"] //boton enviar para suscripcion
+{  
+    background-color: $colorB1;
+    color: $colorBlanco;
     border-radius: 0rem 1.875rem 1.875rem 0rem;
     padding: 0px 30px 0px 20px;
-
 }
-
 
 .bloquecontacto{
     width: 1fr;
@@ -213,11 +220,11 @@ textarea:focus {
     flex-wrap: wrap;
     margin: 24px 0px;
     justify-content: center;
-}
-.bloquecontacto article{
-    width: 45%;
+    article{
+        width: 45%;
     margin: 24px;
     text-align: justify;
+    }
 }
 
 .formcontacto{
@@ -227,31 +234,30 @@ textarea:focus {
     grid-template-rows: repeat(3, 1fr)(1, 60px) ;
     column-gap: 24px;
     text-align: left;
-}
-
-.formcontacto div input[type="text"],
-.formcontacto div input[type="email"],
-.formcontacto div input[type="tel"]
+    div input[type="text"],
+    div input[type="email"],
+    div input[type="tel"]
     {
         width: 100%;
         height: 80px;
         padding: 10px;
         margin: 8px 0px;
-        border: 1px solid #cccccc;
+        border: 1px solid $colorcomp7;
     }
-
-.formcontacto div textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0px;
-    border: 1px solid #cccccc;
-}
-.formcontacto input[type="submit"]
-{
-    width: 100%;
-    height: 60px;
-    margin-top: 16px;
-    justify-self: center;
+    div textarea 
+    {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0px;
+        border: 1px solid $colorcomp7;
+    }
+    input[type="submit"]
+    {
+        width: 100%;
+        height: 60px;
+        margin-top: 16px;
+        justify-self: center;
+    }
 }
 
 .section1{
@@ -273,7 +279,6 @@ textarea:focus {
 .formmensaje{
     grid-row: 3/4 ;
     grid-column:1/3;
-
 }
 
 .formenviar{
@@ -285,49 +290,44 @@ textarea:focus {
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-.formsuscripcion div{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 16px 0px;
-}
-
-.formsuscripcion div input[type="email"]
-{
-    padding: 0px 50px;
-    width: 30%;
-    height: 60px;
-}
-.formsuscripcion div input[type="submit"]
-{
-    width: 80px;
-    height: 60px;
-}
-.formsuscripcion label{
-    font-size: 1.5rem;
-    font-family: "Barlow";
-    font-weight: 300;
-    color: #000000;
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 16px 0px;
+        input[type="email"]
+        {
+            padding: 0px 50px;
+            width: 30%;
+            height: 60px;
+        }
+        input[type="submit"]
+        {
+            width: 80px;
+            height: 60px;
+        }
+    }
+    label
+    {
+        font-size: 1.5rem;
+        font-family: "Barlow";
+        font-weight: 300;
+        color: $colornegro;
+    }    
 }
 
 .blueSection{
     text-align: center;
-    background-color: #85BECC;
+    background-color: $colorcomp6;
     padding: 24px 24px;
     margin: 16px 24px;
-
+    h2{
+        color:$colorBlanco;
+    } 
+    p{
+        padding: 24px 0px;
+    } 
 }
-
-.blueSection h2 {
-    color: #ffffff;
-    padding: 24px 0px;
-}
-.blueSection h2,
-.blueSection p {
-    color: #ffffff;
-}
-
 
 /* pagina Terminos y Condiciones */
 
@@ -336,16 +336,14 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     text-align: justify;
-}
-.BloqueTerminos p,
-.BloqueTerminos h4,
-.BloqueTerminos ul{
-    list-style-position: inside;
-    padding: 16px;
-    
-
-}
-.BloqueTerminos ul li{
-    padding-left: 16px;
-    list-style:disc;
+    p,
+    h4,
+    ul{
+        list-style-position: inside;
+        padding: 16px;
+        li{
+            padding-left: 16px;
+            list-style:disc;
+        }
+    }
 }

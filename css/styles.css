@@ -19,13 +19,7 @@ h2 {
   font-size: 2rem;
 }
 
-.h2White {
-  color: #ffffff;
-  font-family: "Oswald";
-  font-weight: 500;
-}
-
-.grisTitle {
+.Title {
   font-size: 2.8125rem;
   color: #949494;
 }
@@ -47,13 +41,6 @@ h4 {
   font-size: 1.2rem;
   font-family: "Barlow";
   font-weight: 300;
-  text-decoration: none;
-}
-
-.h4400 {
-  color: #949494;
-  font-family: "Barlow";
-  font-weight: 500;
   text-decoration: none;
 }
 
@@ -81,27 +68,6 @@ p {
   color: #828282;
 }
 
-.pBlack {
-  font-family: "Barlow";
-  font-weight: 300;
-  color: #000000;
-  /* font-size: 1.5rem; */
-}
-
-.green {
-  font-size: 2rem;
-  color: #CDCB13;
-}
-
-.grisTitle {
-  font-size: 2.8125rem;
-  color: #949494;
-}
-
-.grisDark {
-  color: #4A4A4A;
-}
-
 .lighter {
   color: #666565;
   font-family: "Barlow";
@@ -124,13 +90,11 @@ p {
   cursor: pointer;
   transition: transform 0.3s ease; /* Transición suave */
 }
-
 .botonVioleta:hover {
   background-color: #5254C3;
   border: 3px solid #5254C3;
   transform: scale(1.01);
 }
-
 .botonVioleta:active {
   color: #5254C3;
   background-color: #ffffff;
@@ -148,13 +112,11 @@ p {
   border-radius: 3rem;
   cursor: pointer;
 }
-
 .botonComprar:hover {
   color: #007FE5;
   border: 2px solid #007FE5;
   border-radius: 3rem;
 }
-
 .botonComprar:active {
   color: #ffffff;
   background-color: #007FE5;
@@ -169,20 +131,17 @@ p {
   font-family: "Barlow";
   font-size: 1rem;
   font-weight: 300;
-  /* padding: 15px 90px; */
   border: 3px solid #4FA5EB;
   border-radius: 3rem;
   cursor: pointer;
   margin-top: 1.5rem;
   transition: transform 0.3s ease; /* Transición suave */
 }
-
 .botonCargarMas:hover {
   background-color: #007FE5;
   border: 3px solid #007FE5;
   transform: scale(1.01);
 }
-
 .botonCargarMas:active {
   color: #007FE5;
   background-color: #ffffff;
@@ -443,7 +402,7 @@ footer div section {
   align-items: center;
   Margin: 48px 24px 24px 24px;
 }
-.whiteSection h2 {
+.whiteSection h1, .whiteSection h2 {
   font-size: 2.8125rem;
   color: #949494;
 }
@@ -483,6 +442,9 @@ footer div section {
   padding: 80px 24px;
   margin: 24px 0px;
 }
+.greenSection h2 {
+  color: #CDCB13;
+}
 
 .GridContacto {
   width: 100%;
@@ -503,6 +465,9 @@ footer div section {
   background-color: #A92C88;
   padding: 24px;
   text-align: center;
+}
+.GridContactExperiencia1 h2 {
+  color: #ffffff;
 }
 
 .GridContactExperiencia1 img {
@@ -534,6 +499,9 @@ footer div section {
   align-items: center;
   padding: 24px;
 }
+.GridContactWorld h2 {
+  color: #ffffff;
+}
 
 .GridContactFormada {
   grid-row: 2/3;
@@ -541,6 +509,14 @@ footer div section {
   background-color: #C7c7c7;
   padding: 24px;
   text-align: justify;
+}
+.GridContactFormada h2 {
+  color: #4A4A4A;
+  text-align: center;
+}
+.GridContactFormada p {
+  color: #4A4A4A;
+  font-weight: 400;
 }
 
 .ContactBlueSection {
@@ -551,14 +527,11 @@ footer div section {
   width: 100%;
   margin: 24px;
 }
-
 .ContactBlueSection article {
   width: 25%;
   padding: 0px 24px;
 }
-
-.ContactBlueSection h2,
-.ContactBlueSection p {
+.ContactBlueSection h2, .ContactBlueSection p {
   color: #ffffff;
 }
 
@@ -602,7 +575,6 @@ input {
   padding: 10px;
   transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
 }
-
 input:focus {
   background-color: #ffffff;
 }
@@ -614,7 +586,6 @@ textarea {
   font-family: "Barlow";
   transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
 }
-
 textarea:focus {
   background-color: #ffffff;
   border: none transparent;
@@ -642,7 +613,6 @@ textarea:focus {
   margin: 24px 0px;
   justify-content: center;
 }
-
 .bloquecontacto article {
   width: 45%;
   margin: 24px;
@@ -657,7 +627,6 @@ textarea:focus {
   column-gap: 24px;
   text-align: left;
 }
-
 .formcontacto div input[type=text],
 .formcontacto div input[type=email],
 .formcontacto div input[type=tel] {
@@ -667,14 +636,12 @@ textarea:focus {
   margin: 8px 0px;
   border: 1px solid #cccccc;
 }
-
 .formcontacto div textarea {
   width: 100%;
   padding: 10px;
   margin: 8px 0px;
   border: 1px solid #cccccc;
 }
-
 .formcontacto input[type=submit] {
   width: 100%;
   height: 60px;
@@ -717,25 +684,21 @@ textarea:focus {
   display: flex;
   flex-direction: column;
 }
-
 .formsuscripcion div {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 16px 0px;
 }
-
 .formsuscripcion div input[type=email] {
   padding: 0px 50px;
   width: 30%;
   height: 60px;
 }
-
 .formsuscripcion div input[type=submit] {
   width: 80px;
   height: 60px;
 }
-
 .formsuscripcion label {
   font-size: 1.5rem;
   font-family: "Barlow";
@@ -749,15 +712,11 @@ textarea:focus {
   padding: 24px 24px;
   margin: 16px 24px;
 }
-
 .blueSection h2 {
   color: #ffffff;
-  padding: 24px 0px;
 }
-
-.blueSection h2,
 .blueSection p {
-  color: #ffffff;
+  padding: 24px 0px;
 }
 
 /* pagina Terminos y Condiciones */
@@ -767,14 +726,14 @@ textarea:focus {
   flex-direction: column;
   text-align: justify;
 }
-
 .BloqueTerminos p,
 .BloqueTerminos h4,
 .BloqueTerminos ul {
   list-style-position: inside;
   padding: 16px;
 }
-
+.BloqueTerminos p li,
+.BloqueTerminos h4 li,
 .BloqueTerminos ul li {
   padding-left: 16px;
   list-style: disc;
@@ -853,8 +812,7 @@ textarea:focus {
     width: 50%;
     padding: 0px 24px;
   }
-  .ContactBlueSection h2,
-  .ContactBlueSection p {
+  .ContactBlueSection article h2, .ContactBlueSection article p {
     text-align: justify;
   }
   .BannerTienda {

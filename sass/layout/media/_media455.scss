@@ -1,7 +1,6 @@
 
 @media (max-width: 455px){
 
-
     .banner {
         height: auto;
         flex-direction: column-reverse
@@ -17,7 +16,6 @@
         width: 80%;
         object-fit: contain;
     }
-
     .banner2{
         justify-content:center;
         background-position: top -150px left -20px;
@@ -32,16 +30,11 @@
             }
         }
     }
-
     .estiloprueba{
         flex-direction: column;
     }
-
-
     .bgqs {
         padding: 20px;
-
-
     }
     .bannerImg3 {
         width: 80%;
@@ -51,32 +44,25 @@
         width: 90%;
         padding-bottom: 60px;
     }
-
     .productos{
         padding: 0px 0px 0px 40px;
-
     }
-
     .GridContactExperiencia1 img{
         display: none;
     }
-
     .ContactBlueSection article{
         width: 100%;
         padding: 0px 24px;
     }
-
     .GridBannerTienda{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
-
     .GridBannerTiendaObj1{
         height: 150%;
         grid-row: 2/6 ;
         grid-column:1/3;
         padding-top: 50px;
-
     }
     .GridBannerTiendaObj2{
         width: 100%;
@@ -85,7 +71,6 @@
         object-position: 0px 0px;
         padding-top: 50px;
     }
-
     .GridBannerTiendaObj3{
         width: 110%;
         grid-row: 1/3 ;
@@ -93,8 +78,6 @@
         object-position: -20px;
         padding-top: 50px;
     }
-
-
     .formcontacto{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr)(1, 60px) ;
@@ -123,29 +106,29 @@
         grid-row: 6/7 ;
         grid-column:1/3;
     }
-
-
-.formsuscripcion div input[type="email"]
-{
-    padding: 0px 50px;
-    width: 70%;
-    height: 60px;
-}
-.formsuscripcion div input[type="submit"]
-{
-    width: 80px;
-    height: 60px;
-}
-
-.navbar-collapse {
-    text-align: center;
-}
-.iconmenu{
-    justify-content: center;
-    width: 100%;
-}
-.dropdown{
-    flex-direction: column;
-}
-
+    .formsuscripcion{
+        div{
+            input[type="email"]
+            {
+                padding: 0px 50px;
+                width: 70%;
+                height: 60px;
+            }
+            input[type="submit"]
+            {
+                width: 80px;
+                height: 60px;
+            }
+        }
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    .iconmenu{
+        justify-content: center;
+        width: 100%;
+    }
+    .dropdown{
+        flex-direction: column;
+    }
 }

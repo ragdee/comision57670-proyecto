@@ -1,76 +1,71 @@
 .botonVioleta {
-    background-color:#8B8CD6;
-    color:#ffffff;
+    background-color:$colorA1;
+    color:$colorBlanco;
     font-family: "Barlow";
     font-size: 1.5rem;
     padding: 15px 30px;
     margin-top: 0.5rem;
-    border:3px solid #8B8CD6;
+    border:3px solid $colorA1;
     border-radius:3rem;
     cursor: pointer;
     transition: transform 0.3s ease; /* Transición suave */
-}
-.botonVioleta:hover {
-    background-color:#5254C3;
-    border:3px solid #5254C3;
+    &:hover{
+        background-color:$colorA2;
+    border:3px solid $colorA2;
     transform: scale(1.01);
-}
-.botonVioleta:active{
-    color:#5254C3;
-    background-color:#ffffff;
-    border:3px solid #5254C3;
+    }
+    &:active{
+        color:$colorA2;
+    background-color:$colorBlanco;
+    border:3px solid $colorA2;
     border-radius: 3rem;
+    }
 }
-
-
 
 
 .botonComprar {
-    color:#4FA5EB;
-    background-color:#ffffff;
+    color:$colorB1;
+    background-color:$colorBlanco;
     font-family: "Barlow";
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    border: 2px solid #4FA5EB;
+    border: 2px solid $colorB1;
     border-radius: 3rem;
     cursor: pointer;
+    &:hover{
+        color:$colorB2;
+        border:2px solid $colorB2;
+        border-radius: 3rem;
+    }
+    &:active{
+        color:$colorBlanco;
+        background-color:$colorB2;
+        border:2px solid $colorB2;
+        border-radius: 3rem;
+    }
 }
 
-.botonComprar:hover {
-    color:#007FE5;
-    border:2px solid #007FE5;
-    border-radius: 3rem;
-}
-.botonComprar:active {
-    color:#ffffff;
-    background-color:#007FE5;
-    border:2px solid #007FE5;
-    border-radius: 3rem;
-}
 
 .botonCargarMas {
     width: 100%;
-    background-color:#4FA5EB;
-    color:#ffffff;
+    background-color:$colorB1;
+    color:$colorBlanco;
     font-family: "Barlow";
     font-size: 1rem;
     font-weight: 300;
-    /* padding: 15px 90px; */
-    border:3px solid #4FA5EB;
+    border:3px solid $colorB1;
     border-radius:3rem;
     cursor: pointer;
     margin-top: 1.5rem;
     transition: transform 0.3s ease; /* Transición suave */
-}
-
-.botonCargarMas:hover{
-    background-color:#007FE5;
-    border:3px solid #007FE5;
-    transform: scale(1.01);
-}
-.botonCargarMas:active{
-    color:#007FE5;
-    background-color:#ffffff;
-    border:3px solid #007FE5;
-
+    &:hover{
+        background-color:$colorB2;
+        border:3px solid $colorB2;
+        transform: scale(1.01);
+    }
+    &:active{
+        color:$colorB2;
+        background-color:$colorBlanco;
+        border:3px solid $colorB2;
+    }
 }

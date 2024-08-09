@@ -11,61 +11,49 @@
   }
   
   h2{
-    color: $tituloGris;
+    color: map-get($colortexto,color3);
     font-family: "Oswald";
     font-weight: 500;
     font-size: 2rem;
   }
   
-  .h2White{
-    color:$colorTexto1;
-    font-family: "Oswald";
-    font-weight: 500;
-  }
-  
-  .grisTitle{
+  .Title{
     font-size: 2.8125rem;
-    color: $tituloGris;
+    color: map-get($colortexto,color3);
   }
   
   h3{
-    color:#666565;
+    color:map-get($colortexto,color5);
     font-family: "Barlow";
   }
   
   h4{
-    color:$tituloGris;
+    color:map-get($colortexto,color3);
     font-size: 1.2rem;
     font-family: "Barlow";
     font-weight: 300;
   }
   
   .h4{
-    color:$tituloGris;
+    color:map-get($colortexto,color3);
     font-size: 1.2rem;
     font-family: "Barlow";
     font-weight: 300;
     text-decoration: none
   }
   
-  .h4400{
-    color:$tituloGris;
-    font-family: "Barlow";
-    font-weight: 500;
-    text-decoration: none
-  }
   .clickeable:hover{
     font-weight: 400;
   }
   
   h5{
-    color:#828282;
+    color:map-get($colortexto,color4);
     font-family: "Barlow";
     font-size: medium;
     font-weight: 600;
   }
   h6{
-    color:#828282;
+    color:map-get($colortexto,color4);
     font-family: "Barlow";
     font-size: medium;
     font-weight: 300;
@@ -75,32 +63,11 @@
   p{
     font-family: "Barlow";
     font-weight: 300;
-    color: #828282;
-  }
-  
-  .pBlack{
-    font-family: "Barlow";
-    font-weight: 300;
-    color: $colorTexto2;
-    /* font-size: 1.5rem; */
-  }
-  
-  
-  .green{
-    font-size: 2rem;
-    color: #CDCB13;
-  }
-  .grisTitle{
-    font-size: 2.8125rem;
-    color: $tituloGris;
-  }
-  
-  .grisDark{
-    color: #4A4A4A;
+    color:map-get($colortexto,color4);
   }
   
   .lighter{
-    color:#666565;
+    color:map-get($colortexto,color5);
     font-family: "Barlow";
     font-weight: 400;
   }
@@ -108,5 +75,3 @@
   .bold{
     font-weight: bold;
   }
-
-//es necesario  renombrar las clases de acuerdo a las variables para que al momento e cambiar tonos no se afecte.
