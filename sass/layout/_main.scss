@@ -1,26 +1,20 @@
 
 .whiteSection{
     background-color: $colorBlanco;
-    display: flex;
-    flex-direction: column;
+    @include flex(column,nowrap,center,center);
     text-align: center;
-    justify-content: center;
-    align-items: center;
     Margin: 48px 24px 24px 24px;
     h1, h2{
         font-size: 2.8125rem;
         color: map-get($colortexto,color3);
     }
-
 }
 
 .productos{
     padding: 0px 0px 0px 100px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    @include flex(row,wrap,flex-start,center);
     width: 100%;
-    div{    
+    div{
         width: 250px;
         height: 400px;
         img{
@@ -38,7 +32,7 @@
         h3,
         p,
         button {
-            margin-bottom: 1rem;            
+            margin-bottom: 1rem;
         }
     }
 }
@@ -65,10 +59,7 @@
 .GridContactExperiencia1{
     grid-row: 1/2 ;
     grid-column:1/2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
+    @include flex(row,nowrap,space-between,center);
     background-color: $colorcomp2;
     padding: 24px;
     text-align: center;
@@ -101,10 +92,7 @@
     background-repeat: no-repeat;
     background-position: center;
     object-fit: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column,nowrap,center,center);
     padding:24px;
     h2{
         color:map-get($colortexto,color1)
@@ -122,7 +110,7 @@
     }
     p{
         color:map-get($colortexto,color6);
-        font-weight: 400;    
+        font-weight: 400;
     }
 }
 
@@ -143,9 +131,7 @@
 }
 
 .Tienda{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flex(row,nowrap,center,center);
     width: 100%;
 }
 .bloquefiltro{
@@ -155,8 +141,7 @@
 }
 
 .divflex{
-    display: flex;
-    justify-content:space-between;
+    @include flex(row,nowrap,space-between,center);
 }
 
 /* personalizacion acordeon */
@@ -207,7 +192,7 @@ textarea {
 }
 
 .submitSuscripcion[type="submit"] //boton enviar para suscripcion
-{  
+{
     background-color: $colorB1;
     color: $colorBlanco;
     border-radius: 0rem 1.875rem 1.875rem 0rem;
@@ -244,7 +229,7 @@ textarea {
         margin: 8px 0px;
         border: 1px solid $colorcomp7;
     }
-    div textarea 
+    div textarea
     {
         width: 100%;
         padding: 10px;
@@ -313,7 +298,7 @@ textarea {
         font-family: "Barlow";
         font-weight: 300;
         color: $colornegro;
-    }    
+    }
 }
 
 .blueSection{
@@ -323,18 +308,17 @@ textarea {
     margin: 16px 24px;
     h2{
         color:$colorBlanco;
-    } 
+    }
     p{
         padding: 24px 0px;
-    } 
+    }
 }
 
 /* pagina Terminos y Condiciones */
 
 .BloqueTerminos{
     width:95%;
-    display: flex;
-    flex-direction: column;
+    @include flex(column,nowrap,flex-start,justify);
     text-align: justify;
     p,
     h4,

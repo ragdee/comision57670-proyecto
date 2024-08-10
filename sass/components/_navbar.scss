@@ -1,13 +1,15 @@
 .bg-body-tertiary {
-    background-color: #ffffff !important;
+    background-color: $colorBlanco !important;
 }
+
 .sticky{
-    background-color: #ffffff;
+    background-color: $colorBlanco;
     width:100%;
     position:fixed;
     top: 0;
     z-index: 99;
 }
+
 .estiloprueba{
     margin-top: 1rem;
 }
@@ -23,7 +25,7 @@ header{
 
 ul {
     font-family: "Barlow";
-    color: #949494;
+    color: map-get($colortexto,color3);
     font-weight:500;
     padding-left: 1rem;
 }
@@ -68,6 +70,7 @@ li{
     fill: #2382AB;
     transition: fill 0.3s;
 }
+
 .svg:hover {
     fill: #86CFEF;
 }
@@ -80,20 +83,22 @@ li{
     display: flex;
     flex-direction: row;
     width: 100px;
+    li{
+        a{
+            padding-right: 0.5rem;
+        }
+    }
 }
-.iconmenu li a{
-    padding-right: 0.5rem;
-}
+
 .dropdown{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flex(row,nowrap,center,center);
 }
 
 .dropdown-menu {
     opacity: 0; /* Inicialmente, el menú está oculto */
     transition: opacity 0.5s ease; /* Transición suave */
 }
+
 .nav-item.dropdown:hover .dropdown-menu {
     opacity: 1; /* Al pasar el mouse, muestra el menú */
 }

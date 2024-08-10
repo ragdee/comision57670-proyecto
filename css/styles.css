@@ -232,7 +232,6 @@ li {
   flex-direction: row;
   width: 100px;
 }
-
 .iconmenu li a {
   padding-right: 0.5rem;
 }
@@ -240,6 +239,8 @@ li {
 .dropdown {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
 }
 
@@ -269,8 +270,10 @@ li {
   width: 100%;
   height: 25rem;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
+  align-items: center;
   background-size: cover;
   background-position: center center;
 }
@@ -292,8 +295,10 @@ li {
   width: 100%;
   height: 25rem;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: end;
+  align-items: center;
   background-image: url(../assets/banner2background1.jpg);
   background-size: cover;
   background-position: center center;
@@ -397,9 +402,10 @@ footer div section {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
   Margin: 48px 24px 24px 24px;
 }
 .whiteSection h1, .whiteSection h2 {
@@ -410,7 +416,9 @@ footer div section {
 .productos {
   padding: 0px 0px 0px 100px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
 }
@@ -460,8 +468,9 @@ footer div section {
   grid-column: 1/2;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
   background-color: #A92C88;
   padding: 24px;
   text-align: center;
@@ -495,6 +504,7 @@ footer div section {
   object-fit: contain;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   padding: 24px;
@@ -538,7 +548,9 @@ footer div section {
 .Tienda {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -550,7 +562,10 @@ footer div section {
 
 .divflex {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* personalizacion acordeon */
@@ -724,6 +739,9 @@ textarea:focus {
   width: 95%;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: justify;
   text-align: justify;
 }
 .BloqueTerminos p,
