@@ -45,28 +45,40 @@
         padding-bottom: 60px;
     }
 
-    .whiteSection{
+    .whiteSection{        
         div{
             h2{
-                font-size: 2rem;
+                font-size:1.8rem;
+                } 
+            div{                
+                h2{
+                font-size:1.8rem;
+                }
+            }        
+        }
+        section{
+            flex-direction: row;
+            article{
+                width: 100%;
+                padding: 0px 24px;
+                h2{
+                    font-size:1.8rem;
+                }
             }
-            
-        }
-        div{
-            
-        }
+        }        
     }
-
+    // .GridContactExperiencia1{
+    //     max-height: 350px;
+    // }
     .productos{
         padding: 0px 0px 0px 40px;
     }
-    .GridContactExperiencia1 img{
-        display: none;
+    .GridContactExperiencia1{
+        img{
+            display: none;
+        }
     }
-    .ContactBlueSection article{
-        width: 100%;
-        padding: 0px 24px;
-    }
+
     .GridBannerTienda{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -134,6 +146,8 @@
             }
         }
     }
+
+
     .navbar-collapse {
         text-align: center;
     }

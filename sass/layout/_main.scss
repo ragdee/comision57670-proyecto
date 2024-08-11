@@ -1,4 +1,15 @@
 
+// .whiteSection{
+//     background-color: $colorBlanco;
+//     @include flex(column,nowrap,center,center);
+//     text-align: center;
+//     Margin: 48px 24px 24px 24px;
+//     h1, h2{
+//         font-size: 2.8125rem;
+//         color: map-get($colortexto,color3);
+//     }
+// }
+
 .whiteSection{
     background-color: $colorBlanco;
     @include flex(column,nowrap,center,center);
@@ -8,7 +19,27 @@
         font-size: 2.8125rem;
         color: map-get($colortexto,color3);
     }
+    div{
+        h2{
+            font-size:2.5rem;
+            } 
+        div{
+            h2{
+            font-size:2.5rem;
+            }
+        }        
+    }
+    section{
+        article{
+            h2{
+                font-size:2.5rem;
+            }
+        }
+    }
+    
 }
+
+
 
 .productos{
     padding: 0px 0px 0px 100px;
@@ -124,10 +155,10 @@
     article{
         width: 25%;
         padding: 0px 24px;
-    }
         h2,p{
             color: map-get($colortexto,color1);
         }
+    }
 }
 
 .Tienda{

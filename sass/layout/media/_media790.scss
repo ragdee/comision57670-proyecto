@@ -44,15 +44,13 @@
         padding: 0px 0px 0px 100px;
 
     }
-
-
-    .GridContacto{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        gap: 24px;
-        text-align: left;
-    }
-
+    
+    // .GridContacto{
+    //     grid-template-columns: repeat(2, 1fr);
+    //     grid-template-rows: repeat(4, 1fr);
+    //     gap: 24px;
+    //     text-align: left;
+    // }
 
     .GridContactExperiencia1{
         grid-row: 1/2 ;
