@@ -550,7 +550,7 @@ footer div section {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: 100%;
 }
 
@@ -930,6 +930,9 @@ textarea:focus {
   .bannerImg4 {
     width: 90%;
     padding-bottom: 60px;
+  }
+  .whiteSection div h2 {
+    font-size: 2rem;
   }
   .productos {
     padding: 0px 0px 0px 40px;

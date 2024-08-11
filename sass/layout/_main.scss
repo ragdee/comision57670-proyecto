@@ -131,7 +131,7 @@
 }
 
 .Tienda{
-    @include flex(row,nowrap,center,center);
+    @include flex(row,nowrap,center,start);
     width: 100%;
 }
 .bloquefiltro{
