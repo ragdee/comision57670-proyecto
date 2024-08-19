@@ -1,15 +1,3 @@
-
-// .whiteSection{
-//     background-color: $colorBlanco;
-//     @include flex(column,nowrap,center,center);
-//     text-align: center;
-//     Margin: 48px 24px 24px 24px;
-//     h1, h2{
-//         font-size: 2.8125rem;
-//         color: map-get($colortexto,color3);
-//     }
-// }
-
 .whiteSection{
     background-color: $colorBlanco;
     @include flex(column,nowrap,center,center);
@@ -40,7 +28,6 @@
 }
 
 
-
 .productos{
     padding: 0px 0px 0px 100px;
     @include flex(row,wrap,flex-start,center);
@@ -52,7 +39,7 @@
             width: 200px;
             height: 200px;
             object-fit: contain;
-            transition: transform 0.3s ease; /* Transición suave */
+            transition: transform 0.3s ease; 
             &:hover{
                 transform: scale(1.05);
             }
@@ -175,7 +162,7 @@
     @include flex(row,nowrap,space-between,center);
 }
 
-/* personalizacion acordeon */
+
 
 .accordion{
     --bs-accordion-btn-bg:#ffffff;
@@ -188,17 +175,16 @@
     text-align: justify;
 }
 
-/* pagina contacto */
 
 input {
-    background-color: $colorcomp5; /* Color de fondo por defecto */
+    background-color: $colorcomp5; 
     border: none;
     outline: none;
     font-family: "Barlow";
     padding: 10px;
-    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    transition: background-color 0.3s ease; 
     &:focus{
-        background-color: $colorBlanco /* Color de fondo por defecto */
+        background-color: $colorBlanco 
     }
 }
 
@@ -207,7 +193,7 @@ textarea {
     border: none transparent;
     outline: none;
     font-family:"Barlow";
-    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    transition: background-color 0.3s ease;
     &:focus{
         background-color: $colorBlanco;
     border: none transparent;
@@ -222,7 +208,7 @@ textarea {
     padding: 10px 10px;
 }
 
-.submitSuscripcion[type="submit"] //boton enviar para suscripcion
+.submitSuscripcion[type="submit"] 
 {
     background-color: $colorB1;
     color: $colorBlanco;
@@ -345,7 +331,6 @@ textarea {
     }
 }
 
-/* pagina Terminos y Condiciones */
 
 .BloqueTerminos{
     width:95%;
