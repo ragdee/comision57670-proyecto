@@ -8,7 +8,7 @@
     border:3px solid $colorA1;
     border-radius:3rem;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease; 
     &:hover{
         background-color:$colorA2;
     border:3px solid $colorA2;
@@ -57,7 +57,7 @@
     border-radius:3rem;
     cursor: pointer;
     margin-top: 1.5rem;
-    transition: transform 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease;
     &:hover{
         background-color:$colorB2;
         border:3px solid $colorB2;

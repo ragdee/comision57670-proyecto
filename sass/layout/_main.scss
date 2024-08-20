@@ -27,7 +27,6 @@
     
 }
 
-
 .productos{
     padding: 0px 0px 0px 100px;
     @include flex(row,wrap,flex-start,center);
@@ -73,7 +72,6 @@
     text-align: left;
 }
 
-
 .GridContactExperiencia1{
     grid-row: 1/2 ;
     grid-column:1/2;
@@ -90,7 +88,6 @@
     width: 2rem;
     margin: 1rem;
 }
-
 
 .GridContactExperiencia2{
     grid-row: 1/2 ;

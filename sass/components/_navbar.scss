@@ -38,7 +38,7 @@ li{
     display: flex;
     gap: 1rem;
     font-family: "Barlow";
-    list-style: none;  /* Oculta Viñeta del menu */
+    list-style: none;  
     margin: 1rem;
 }
 
@@ -49,7 +49,7 @@ li{
 .eleMenu {
     gap: 1rem;
     font-family: "Barlow";
-    list-style: none;  /* Oculta Viñeta del menu */
+    list-style: none; 
     margin: 1rem;
 }
 
@@ -95,10 +95,10 @@ li{
 }
 
 .dropdown-menu {
-    opacity: 0; /* Inicialmente, el menú está oculto */
-    transition: opacity 0.5s ease; /* Transición suave */
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
-    opacity: 1; /* Al pasar el mouse, muestra el menú */
+    opacity: 1; 
 }
