@@ -759,6 +759,7 @@ textarea:focus {
 .BloqueTerminos ul li {
   padding-left: 16px;
   list-style: disc;
+  font-weight: 300;
 }
 
 @media (max-width: 950px) {
